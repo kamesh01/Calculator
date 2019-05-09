@@ -9,10 +9,10 @@ public class Calculator {
         int num1,num2;
         num1 = inp.nextInt();
         num2 = inp.nextInt();
-        int ans;
         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
+        inp.close();
         switch (choose){
         case 1:
             System.out.println(add( num1,num2));
@@ -31,9 +31,7 @@ public class Calculator {
 
 
         }
-
-
-
+        
     }
     public static int add(int x, int y)
     {
